@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px #ddd;
+}
+
+.today {
+    text-align: center;
+}
+
+button {
+    background: #16a34a;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #15803d;
+}
+
+.schedule-item {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+/* Mobile friendly */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        margin: 15px auto;
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .today h2 {
+        font-size: 28px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 17px;
+    }
+
+    .schedule-item {
+        padding: 15px 8px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoomClean</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2563eb">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>🧹 RoomClean</h1>
+        <p>Smart Room Cleaning</p>
+    </header>
+
+    <main>
+
+        <section class="today">
+            <p>Today's Cleaning Duty</p>
+            <h2 id="cleaner">Member 1</h2>
+            <p id="date"></p>
+
+            <button onclick="markCleaned()">
+                ✅ Mark as Cleaned
+            </button>
+
+            <p id="status"></p>
+        </section>
+        <section class="room-info">
+    <h2>🏠 Room Setup</h2>
+    <p>Room: <strong>Room 101</strong></p>
+    <p>👥 6 Members</p>
+
+    <button onclick="showMembers()">
+        👥 View Members
+    </button>
+
+    <div id="membersList"></div>
+</section>
+
+        <section class="next">
+            <h2>📅 Cleaning Schedule</h2>
+
+            <div id="schedule"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
